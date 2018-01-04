@@ -12,6 +12,7 @@ Marcin Wiazowski working with Trend Micro's Zero Day Initiative
 ````
 
 补的地方也很简单
+
 补之前:
 ````c
 __int64 __usercall xxxRealInternalGetMessage()
@@ -48,6 +49,7 @@ __int64 __usercall xxxRealInternalGetMessage()
 ````c
 __int64 __usercall xxxRealInternalGetMessage()
 {
+    ...
            v77 = 0x118i64;
             if ( !(*(_DWORD *)(v64 + 0x30) & 2) )
               v77 = *(_QWORD *)(v64 + 0x20);
@@ -69,5 +71,6 @@ __int64 __usercall xxxRealInternalGetMessage()
               v76,
               0i64,
               0i64);
+    ...
 }
 ````
